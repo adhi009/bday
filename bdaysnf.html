@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday, My Sunflower! 🌻</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffbeb;--bg2:#fef3c7;--card:#ffffff;--p:#eab308;--p2:#facc15;--a:#854d0e;--t:#422006;--m:#a16207;--line:#fde68a}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--t);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background-image:radial-gradient(#facc15 1.5px, transparent 1.5px);background-size:32px 32px;opacity:.15}
+header{height:100vh;display:grid;place-items:center;text-align:center;padding:20px;background:linear-gradient(rgba(255,251,235,.75),rgba(254,243,199,.9)),url('https://images.unsplash.com/photo-1470509037663-253afd7f0f51?auto=format&fit=crop&w=1920&q=80') center/cover}
+h1{font-family:'Dancing Script',cursive;font-size:clamp(2.8rem,7vw,4rem);color:var(--a)} h1 span{color:var(--p)}
+h2{font-family:'Dancing Script',cursive;font-size:2.6rem;text-align:center;margin-bottom:40px;color:var(--a)}
+.btn{display:inline-block;padding:12px 30px;background:linear-gradient(135deg,#eab308,#facc15);color:#422006;text-decoration:none;border-radius:30px;font-weight:700;box-shadow:0 8px 20px rgba(234,179,8,.4)}
+section{padding:70px 20px;max-width:900px;margin:auto}
+.timeline{border-left:3px dashed var(--p2);margin-left:20px;padding-left:30px}.item{margin-bottom:45px;position:relative}.item::before{content:'🌻';position:absolute;left:-44px;top:0;font-size:18px;background:var(--card);border:1.5px solid var(--line);width:28px;height:28px;display:grid;place-items:center;border-radius:50%}
+.content{background:var(--card);padding:22px;border-radius:16px;border:1.5px solid var(--line);box-shadow:0 10px 25px rgba(234,179,8,.12)}
+.frame{background:#fff;padding:10px 10px 40px;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.15),0 0 0 2px #fde68a;transform:rotate(-1.2deg);transition:.3s;position:relative;margin-bottom:14px;margin-top:18px}
+.frame img{width:100%;display:block;cursor:pointer}
+.frame::after{content:'My Sunflower 🌻';position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:Dancing Script,cursive;color:#a16207;font-size:1.15rem}
+.frame::before{content:'🌻';position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:1.7rem;z-index:5}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.g-item{background:#fff;padding:6px;border:2px solid #fde68a;border-radius:16px;box-shadow:0 8px 20px rgba(234,179,8,.15);aspect-ratio:4/5;position:relative;cursor:pointer;overflow:hidden;margin-top:18px;transition:.3s}
+.g-item:hover{transform:translateY(-6px) rotate(1deg)}
+.g-item img{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:11px;display:block}
+.g-item::before{content:'🌼';position:absolute;top:8px;right:8px;z-index:3;background:rgba(255,255,255,.9);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.cap{position:absolute;bottom:0;left:0;right:0;padding:14px 10px;background:linear-gradient(transparent,rgba(66,32,6,.75));color:#fff;font-family:'Dancing Script',cursive;font-size:1.15rem;font-weight:600;text-align:center}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.reason{background:var(--card);padding:22px;border-radius:16px;text-align:center;border:1.5px solid var(--line)}.reason h3{color:var(--p);font-size:1.8rem}
+.letter-wrap{max-width:700px;margin:auto;padding-top:10px}.lights{display:flex;justify-content:space-around;margin-bottom:14px;letter-spacing:10px;font-size:1.4rem}
+.letter{background:var(--card);background-image:radial-gradient(circle at 20% 30%,rgba(234,179,8,.18),transparent 50%),linear-gradient(rgba(0,0,0,.03) 1px,transparent 1px);background-size:100% 100%,100% 28px;padding:50px 40px 35px 70px;border-radius:16px;border:1.5px solid var(--line);line-height:28px;font-family:Playfair Display,serif;box-shadow:0 0 30px rgba(234,179,8,.2),0 15px 35px rgba(0,0,0,.08);position:relative;min-height:350px;color:var(--t)}
+.letter::before{content:'';position:absolute;left:55px;top:0;bottom:0;width:2px;background:rgba(234,179,8,.35)} #cursor{animation:b 1s infinite;color:var(--p)} @keyframes b{0%,50%{opacity:1}51%,100%{opacity:0}}
+.secret{padding:13px 32px;background:linear-gradient(135deg,#eab308,#facc15);color:#422006;border:0;border-radius:50px;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(234,179,8,.4)}
+.s-card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:35px 25px;max-width:600px;margin:0 auto;box-shadow:0 0 40px rgba(234,179,8,.2)}
+.candle{cursor:pointer;position:relative;display:flex;flex-direction:column;align-items:center}
+.stick{width:14px;height:42px;background:repeating-linear-gradient(45deg,#ffffff 0 5px,#fde68a 5px 10px);border-radius:7px;border:1px solid #facc15}
+.wick{width:4px;height:12px;background:#422006;border-radius:2px;margin-bottom:-3px;z-index:5}
+.flame{width:16px;height:24px;background:radial-gradient(ellipse at center,#fef08a 0%,#facc15 35%,#eab308 68%,#ca8a04 100%);border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;margin-bottom:4px;animation:flicker.18s infinite alternate;box-shadow:0 0 12px #facc15,0 0 22px #eab308;transform-origin:bottom center}
+.flame.out{animation:none;opacity:0;transform:scale(0) translateY(12px);transition:.45s}
+@keyframes flicker{0%{transform:scaleY(1) scaleX(1) rotate(-1.5deg)}100%{transform:scaleY(1.18) scaleX(.92) rotate(1.5deg)}}
+@keyframes floatUp{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-110vh);opacity:0}}
+@keyframes revealPop{0%{transform:scale(0.8) translateY(30px);opacity:0}100%{transform:scale(1) translateY(0);opacity:1}}
+#sunGrowWrap{text-align:center;padding:60px 20px 30px;position:relative;overflow:hidden;background:linear-gradient(to bottom, #fffbeb 0%, #fef3c7 100%)}
+#sunStage{font-size:4.5rem;display:inline-block;transition:all 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);transform-origin:center}
+#sunText{font-family:'Dancing Script',cursive;font-size:1.8rem;color:#854d0e;margin-top:12px;min-height:30px;transition:.6s}
+.sun-rays{position:absolute;top:40px;left:50%;width:120px;height:120px;transform:translateX(-50%);background:radial-gradient(#fde68a, transparent 70%);border-radius:50%;opacity:.6;animation:pulseSun 2s infinite alternate;pointer-events:none}
+@keyframes pulseSun{0%{transform:translateX(-50%) scale(1)}100%{transform:translateX(-50%) scale(1.3)}}
+.sun-trail{position:fixed;pointer-events:none;font-size:18px;z-index:99999;animation:sunFade 1s forwards}
+@keyframes sunFade{0%{transform:translate(-50%,-50%) scale(1) rotate(0deg);opacity:1}100%{transform:translate(-50%,-150px) scale(0) rotate(90deg);opacity:0}}
+footer{text-align:center;padding:35px;color:var(--m);border-top:1px solid var(--line);font-size:.9rem;background:var(--bg2)}
+#lightbox{position:fixed;inset:0;background:rgba(66,32,6,.88);display:none;place-items:center;z-index:9999;padding:20px}#lightbox.active{display:grid}
+#lightbox img{max-width:92vw;max-height:90vh;border-radius:12px;border:3px solid #facc15}
+</style>
+</head>
+<body>
+<header><div><div style="font-size:3rem">🌻🌻🌻</div><h1>Happy Birthday, My <span>Sunflower 🌻</span></h1><p style="color:var(--a);margin:12px 0 28px;font-weight:600">You make my world brighter like a sunflower 💛</p><a href="#sunGrowWrap" class="btn">See what I made for you... 🌼</a></div></header>
+
+<div id="sunGrowWrap">
+  <div class="sun-rays" id="sunRays"></div>
+  <div id="sunStage">🌞</div>
+  <div id="sunText">Our love started like a small sun...</div>
+
+
+<section><h2>What Makes My Sunflower Special 🌼</h2><div class="timeline">
+<div class="item"><div class="content"><div class="frame"><img src="photo1.jpg" onclick="lb(this.src)" loading="lazy"></div><h3 style="color:var(--a)">Your Beautiful Smile 😊🌻</h3><p style="color:var(--m)">The way your smile lights up my whole world.</p></div></div>
+<div class="item"><div class="content"><div class="frame"><img src="photo2.png" onclick="lb(this.src)" loading="lazy"></div><h3 style="color:var(--a)">Your Gorgeous Eyes ✨🌻</h3><p style="color:var(--m)">Your eyes hold so much warmth, like sunshine.</p></div></div>
+<div class="item"><div class="content"><div class="frame"><img src="photo3.png" onclick="lb(this.src)" loading="lazy"></div><h3 style="color:var(--a)">Your Pure Heart 💛</h3><p style="color:var(--m)">How caring and beautiful you are inside and out.</p></div></div>
+</div></section>
+
+<section><h2>You, My Sunflower In Every Frame 🌻</h2>
+<div class="gallery">
+  <div class="g-item" onclick="lb('photo4.jpg')"><img src="photo4.jpg" loading="lazy"><div class="cap">that look I fall for every time🌻</div></div>
+  <div class="g-item" onclick="lb('photo5.png')"><img src="photo5.png" loading="lazy"><div class="cap">my favourite sunshine ✨</div></div>
+  <div class="g-item" onclick="lb('photo6.png')"><img src="photo6.png" loading="lazy"><div class="cap">my whole universe in one pic 💛</div></div>
+  <div class="g-item" onclick="lb('photo7.jpg')"><img src="photo7.jpg" loading="lazy"><div class="cap">pure sunshine, that's you 🌻</div></div>
+  <div class="g-item" onclick="lb('photo8.jpg')"><img src="photo8.jpg" loading="lazy"><div class="cap">forever my favourite view 🥺🌼</div></div>
+  <div class="g-item" onclick="lb('photo9.jpg')"><img src="photo9.jpg" loading="lazy"><div class="cap">my sunflower, my always 🌻❤️</div></div>
+</div>
+</section>
+<section style="text-align:center;">
+  <h2>How Much Do You Love Me? 🌻</h2>
+  <p style="color:#a16207;margin:-25px 0 20px;">Hold the button — see how big your love grows 💛</p>
+  
+  <div style="max-width:400px;margin:0 auto;">
+    <div style="font-size:5rem; transition:.2s cubic-bezier(.34,1.56,.64,1);" id="loveSun">🌻</div>
+    <div style="height:18px;background:#fff;border:2px solid #fde68a;border-radius:10px;overflow:hidden;margin:15px 0;">
+      <div id="loveBar" style="height:100%;width:0%;background:linear-gradient(90deg,#facc15,#eab308);transition:width.1s linear;border-radius:10px;"></div>
+    </div>
+    <p id="loveText" style="font-family:'Dancing Script',cursive;font-size:1.6rem;color:#854d0e;min-height:35px;">Hold to grow your sunflower 💛</p>
+    
+    <button id="holdBtn" style="margin-top:15px;padding:16px 35px;background:linear-gradient(135deg,#eab308,#facc15);border:0;border-radius:30px;font-weight:700;color:#422006;cursor:pointer;box-shadow:0 8px 20px rgba(234,179,8,.4);font-size:1.1rem;user-select:none;-webkit-user-select:none;touch-action:none;">
+      HOLD This 🌻💛
+    </button>
+    
+    <div id="loveResult" style="display:none;margin-top:20px;animation:revealPop.6s ease;">
+      <div style="background:#fff;border:2px solid #fde68a;border-radius:18px;padding:18px;">
+        <p id="finalLoveMsg" style="font-family:'Dancing Script',cursive;font-size:1.5rem;color:#854d0e;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section><h2>Things I Love About You 🌻</h2><div class="reasons"><div class="reason"><h3>🌻 01</h3><p>Your smile brightens my worst days like sunshine.</p></div><div class="reason"><h3>🌼 02</h3><p>The way you laugh at my silly jokes.</p></div><div class="reason"><h3>💛 03</h3><p>How kind and caring your heart is.</p></div></div></section>
+
+<section><h2>A Little Note For My Sunflower 💌🌻</h2><div class="letter-wrap"><div class="lights">🌻💛🌼💛🌻💛🌼</div><div class="letter"><div style="text-align:center;margin-bottom:12px">🌻 💛 ✨</div><span id="type"></span><span id="cursor">|</span><div id="sign" style="display:none;margin-top:28px"><p>Forever yours,<br><strong style="font-family:Dancing Script,cursive;font-size:2rem;color:#a16207">Adhi 🌻❤️</strong></p></div></div></div></section>
+
+<section style="text-align:center">
+  <h2>Make a Wish & Blow Candles.. 🎂🌻</h2>
+  <p style="color:var(--m);margin:-25px 0 35px">Tap on flame to blow</p>
+  <div style="display:inline-block;position:relative;padding-top:40px">
+    <div id="candles" style="display:flex;gap:22px;justify-content:center;position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:3">
+      <div class="candle" onclick="blowAll()"><div class="flame"></div><div class="wick"></div><div class="stick"></div></div>
+      <div class="candle" onclick="blowAll()"><div class="flame"></div><div class="wick"></div><div class="stick"></div></div>
+      <div class="candle" onclick="blowAll()"><div class="flame"></div><div class="wick"></div><div class="stick"></div></div>
+      <div class="candle" onclick="blowAll()"><div class="flame"></div><div class="wick"></div><div class="stick"></div></div>
+      <div class="candle" onclick="blowAll()"><div class="flame"></div><div class="wick"></div><div class="stick"></div></div>
+    </div>
+    <div style="width:260px;height:150px;background:linear-gradient(#facc15,#eab308);border-radius:12px 12px 20px 20px;position:relative;box-shadow:0 15px 30px rgba(0,0,0,.2), inset 0 -10px 20px rgba(0,0,0,.15);margin:auto">
+      <div style="position:absolute;top:-12px;left:0;right:0;height:28px;background:#fff;border-radius:14px"></div>
+      <div style="position:absolute;bottom:-18px;left:-15px;right:-15px;height:18px;background:#422006;border-radius:10px"></div>
+    </div>
+  </div>
+  <p id="wishMsg" style="margin-top:32px;font-family:'Dancing Script',cursive;font-size:1.6rem;color:var(--a);min-height:30px"></p>
+  <div id="wishReveal" style="display:none; margin-top:35px; animation: revealPop 1s ease;">
+    <div style="background:var(--card); border:2px solid #fde68a; border-radius:20px; padding:20px; max-width:420px; margin:0 auto; box-shadow:0 0 40px rgba(234,179,8,.3);">
+      <img src="photo10.jpg" style="width:100%; border-radius:14px; margin-bottom:16px; border:2px solid #facc15;" onclick="lb(this.src)">
+      <h3 style="font-family:'Dancing Script',cursive; font-size:2rem; color:var(--a);">My wish already came true — Its you.. 🌻💛</h3>
+    </div>
+  </div>
+</section>
+
+<section style="text-align:center"><button id="secBtn" class="secret" onclick="surprise()">Click for a surprise 🎁🌻</button>
+<div id="surBox" style="display:none;margin-top:25px">
+  <div class="s-card">
+    <h3 style="font-family:Dancing Script,cursive;font-size:2.2rem;color:var(--a)">I have something to say... 🌻❤️</h3>
+    <p style="color:var(--t);line-height:1.7;margin-top:10px">Thank you for being my sunshine. Like a sunflower follows the sun, I will always follow you.</p>
+    <div style="font-size:2.5rem;margin:18px 0">🌻💛🌼</div>
+    <div style="margin-top:18px; border-radius:14px; overflow:hidden; border:2px solid #facc15;">
+      <video id="surpriseVideo" controls playsinline poster="photo10.jpg" style="width:100%; display:block;"><source src="surprise.mp4" type="video/mp4"></video>
+    </div>
+  </div>
+</div>
+</section>
+<!-- FINAL REPLY + SECRET STATS TRACKER 🌻 -->
+<section style="text-align:center;max-width:520px;margin:auto;">
+  <h2>Send a Reply 💌🌻</h2>
+  <p style="color:#a16207;margin:-20px 0 18px;">I will get it on my phone instantly 💛</p>
+  
+  <form id="replyForm" action="https://formspree.io/f/xbgdoagj" method="POST" style="background:#fff;border:2.5px solid #fde68a;border-radius:20px;padding:22px;text-align:left;">
+    <input type="hidden" name="_subject" value="🌻 SHE REPLIED - Birthday Site!">
+    <input type="hidden" name="petals" id="statPetals">
+    <input type="hidden" name="loveMax" id="statLove">
+    <input type="hidden" name="timeSpent" id="statTime">
+    <input type="hidden" name="videoWatched" id="statVideo">
+    <input type="hidden" name="pickedSunflowers" id="statPicked">
+    
+    <label style="font-weight:700;color:#854d0e;">Your Message 💛</label>
+    <textarea name="message" id="replyMsg" required placeholder="Write something for me... I will get it on my phone 🌻" style="width:100%;height:120px;padding:12px;border:1.5px solid #fde68a;border-radius:12px;margin:6px 0 14px;outline:none;resize:none;"></textarea>
+    
+    <button type="submit" id="sendBtn" style="width:100%;padding:14px;background:linear-gradient(135deg,#eab308,#facc15);border:0;border-radius:30px;font-weight:700;color:#422006;cursor:pointer;">Send to Adhi 💌🌻</button>
+    <p id="sendStatus" style="text-align:center;margin-top:12px;font-weight:600;display:none;"></p>
+  </form>
+</section>
+<footer>Made with 💛 for my Sunflower</footer>
+<div id="lightbox" onclick="this.classList.remove('active')"><img id="lbImg" alt="full view"></div>
+
+<script>
+function lb(src){ lbImg.src=src; lightbox.classList.add('active'); }
+const txt=`My Dearest Sunflower 🌻,\n\nFrom the moment you came into my life, everything became brighter. You brought sunshine I never knew I needed.\n\nLike a sunflower turns to the sun, I turn to you every single day.\n\nYou are my favourite miracle. Happy Birthday, my sunflower.\n\nAlways and forever yours. 🌻💛`;
+let j=0,started=0; function type(){ if(j<txt.length){ typeEl.innerHTML+=txt[j]==="\n"?"<br>":txt[j]; j++; setTimeout(type,40);} else { cursor.style.display='none'; sign.style.display='block'; } }
+const typeEl=document.getElementById('type'), sign=document.getElementById('sign');
+new IntersectionObserver(e=>{ if(e[0].isIntersecting &&!started){ started=1; type(); } },{threshold:.4}).observe(typeEl);
+function surprise(){ surBox.style.display='block'; secBtn.style.display='none'; for(let i=0;i<25;i++) setTimeout(()=>{ let h=document.createElement('div'); h.textContent=['🌻','💛','🌼','✨'][i%4]; Object.assign(h.style,{position:'fixed',left:Math.random()*100+'vw',top:'100vh',fontSize:'22px',pointerEvents:'none',animation:'floatUp 3s linear forwards',zIndex:9999}); document.body.appendChild(h); setTimeout(()=>h.remove(),3000); },i*100); surBox.scrollIntoView({behavior:'smooth'}); const v=document.getElementById('surpriseVideo'); if(v) v.play().catch(()=>{}); }
+
+// BLOW CANDLES
+let isBlown=false;
+function blowAll(){
+  if(isBlown) return; isBlown=true;
+  const flames=document.querySelectorAll('.flame');
+  const order=[2,1,3,0,4];
+  order.forEach((idx,step)=>{ setTimeout(()=>{ const f=flames[idx]; f.classList.add('out'); let smoke=document.createElement('div'); smoke.textContent='💨'; Object.assign(smoke.style,{position:'absolute',top:'-10px',left:'50%',transform:'translateX(-50%)',fontSize:'14px',animation:'floatUp 1.2s forwards',pointerEvents:'none'}); f.parentElement.appendChild(smoke); setTimeout(()=>smoke.remove(),1200); }, step*180); });
+  setTimeout(()=>{ wishMsg.textContent='All blown! Wish All your Dream come True  🌻💛'; wishReveal.style.display='block'; wishReveal.scrollIntoView({behavior:'smooth', block:'center'}); for(let i=0;i<40;i++) setTimeout(()=>{ let h=document.createElement('div'); h.textContent=['🌻','✨','💛','🌼','🎉'][Math.floor(Math.random()*5)]; Object.assign(h.style,{position:'fixed',left:Math.random()*100+'vw',top:'100vh',fontSize:'22px',pointerEvents:'none',animation:'floatUp 3s linear forwards',zIndex:9999}); document.body.appendChild(h); setTimeout(()=>h.remove(),3000); },i*70); }, 900);
+}
+
+// SUN GROWS LOGIC
+const sunStageEl=document.getElementById('sunStage');
+const sunTextEl=document.getElementById('sunText');
+const sunRaysEl=document.getElementById('sunRays');
+const stages=[{emoji:'🌞',text:'Our love started like a small sun...',scale:1},{emoji:'☀️',text:'...getting brighter every day...',scale:1.3},{emoji:'🌻',text:'...and bloomed into you — my sunflower 💛',scale:1.6}];
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  let idx=0; if(y>270) idx=2; else if(y>120) idx=1;
+  const s=stages[idx];
+  sunStageEl.textContent=s.emoji; sunStageEl.style.transform=`scale(${s.scale}) rotate(${idx*15}deg)`; sunTextEl.textContent=s.text;
+  if(idx===2){ sunRaysEl.style.opacity='0'; if(!sunStageEl.dataset.bloomed){ sunStageEl.dataset.bloomed='1'; for(let i=0;i<12;i++){ setTimeout(()=>{ let p=document.createElement('div'); p.textContent='🌼'; Object.assign(p.style,{position:'absolute',left:'50%',top:'80px',fontSize:'18px',pointerEvents:'none',animation:'floatUp 1.5s forwards'}); p.style.transform=`translateX(${(Math.random()-0.5)*200}px)`; document.getElementById('sunGrowWrap').appendChild(p); setTimeout(()=>p.remove(),1500); },i*80); } } } else { sunRaysEl.style.opacity='.6'; }
+});
+
+// CURSOR TRAIL 🌻
+let lastTrail=0;
+document.addEventListener('mousemove',(e)=>{
+  const now=Date.now(); if(now-lastTrail<60) return; lastTrail=now;
+  const emojis=['🌻','🌼','💛','✨']; const el=document.createElement('div'); el.className='sun-trail'; el.textContent=emojis[Math.floor(Math.random()*emojis.length)]; el.style.left=e.clientX+'px'; el.style.top=e.clientY+'px'; document.body.appendChild(el); setTimeout(()=>el.remove(),1000);
+});
+document.addEventListener('touchmove',(e)=>{
+  const t=e.touches[0]; if(!t) return; const el=document.createElement('div'); el.className='sun-trail'; el.textContent='🌻'; el.style.left=t.clientX+'px'; el.style.top=t.clientY+'px'; document.body.appendChild(el); setTimeout(()=>el.remove(),1000);
+},{passive:true});
+
+// LOVE METER 11 🌻💛
+let holdTimer=null, holdValue=0, isHolding=false;
+const loveSun=document.getElementById('loveSun');
+const loveBar=document.getElementById('loveBar');
+const loveText=document.getElementById('loveText');
+const holdBtn=document.getElementById('holdBtn');
+const loveResult=document.getElementById('loveResult');
+const finalLoveMsg=document.getElementById('finalLoveMsg');
+
+const loveStages=[
+  {p:10,t:"a little? 🥺",s:1},
+  {p:25,t:"a little more? 🌼",s:1.2},
+  {p:45,t:"Getting bigger... 💛",s:1.5},
+  {p:70,t:"Wow you love me so much!! 🌻💛",s:1.9},
+  {p:90,t:"To the sun and back!!! ☀️🌻💛💛",s:2.4},
+  {p:100,t:"INFINITE!! You are my forever sunflower 🌻♾️💛",s:2.8},
+];
+
+function startHold(e){
+  if(e) e.preventDefault();
+  if(isHolding) return;
+  isHolding=true; holdValue=0;
+  if(loveResult) loveResult.style.display='none';
+  
+  holdTimer=setInterval(()=>{
+    holdValue+=1.2;
+    if(holdValue>100) holdValue=100;
+    
+    if(loveBar) loveBar.style.width=holdValue+'%';
+    
+    let stage=loveStages.find(s=>holdValue<=s.p) || loveStages[loveStages.length-1];
+    if(loveText) loveText.textContent=stage.t;
+    if(loveSun) loveSun.style.transform=`scale(${stage.s}) rotate(${holdValue/8}deg)`;
+    
+    if(holdValue>=100){
+      stopHold();
+      if(finalLoveMsg) finalLoveMsg.innerHTML="100%?? No, you love me INFINITELY! 🌻<br>And I love you more than infinity 💛♾️";
+      if(loveResult) loveResult.style.display='block';
+      for(let i=0;i<20;i++) setTimeout(()=>{
+        let h=document.createElement('div'); h.textContent=['🌻','💛','🌼'][i%3];
+        Object.assign(h.style,{position:'fixed',left:Math.random()*100+'vw',top:'100vh',fontSize:'22px',pointerEvents:'none',animation:'floatUp 3s forwards',zIndex:9999});
+        document.body.appendChild(h); setTimeout(()=>h.remove(),3000);
+      },i*80);
+    }
+  },40);
+}
+
+function stopHold(){
+  if(!isHolding) return;
+  isHolding=false;
+  clearInterval(holdTimer);
+  
+  if(holdValue<100 && holdValue>5){
+    let msg="";
+    if(holdValue<20) msg=`Only ${Math.floor(holdValue)}%? I know you love me more 🥺 Hold longer 🌻`;
+    else if(holdValue<50) msg=`${Math.floor(holdValue)}% love? My sunflower loves me more than that 💛 Try again!`;
+    else if(holdValue<80) msg=`${Math.floor(holdValue)}% — Almost infinite!! Hold till 100% 🌻💛`;
+    else msg=`${Math.floor(holdValue)}% SO CLOSE to infinite!! One more try to reach infinity 🌻♾️`;
+    
+    if(finalLoveMsg) finalLoveMsg.textContent=msg;
+    if(loveResult) loveResult.style.display='block';
+  }
+  
+  if(holdValue<100){
+    setTimeout(()=>{
+      if(!isHolding){
+        holdValue=0;
+        if(loveBar) loveBar.style.width='0%';
+        if(loveSun) loveSun.style.transform='scale(1)';
+        if(loveText) loveText.textContent='Hold to grow your sunflower 💛';
+      }
+    },2000);
+  }
+}
+
+if(holdBtn){
+  holdBtn.addEventListener('mousedown', startHold);
+  holdBtn.addEventListener('touchstart', startHold, {passive:false});
+  window.addEventListener('mouseup', stopHold);
+  window.addEventListener('touchend', stopHold);
+  holdBtn.addEventListener('mouseleave', stopHold);
+}
+// REMOTE STATS TRACKER - Sends to YOUR phone via email 🌻
+let stats = JSON.parse(localStorage.getItem('sunflowerStats') || '{"petals":0,"loveMax":0,"picked":[],"videoWatched":false,"startTime":0}');
+if(!stats.startTime) stats.startTime=Date.now();
+let startTime = stats.startTime;
+
+function saveStats(){ localStorage.setItem('sunflowerStats', JSON.stringify(stats)); }
+function getTimeSpent(){ return Math.floor((Date.now()-startTime)/1000); }
+
+// Auto update hidden inputs
+setInterval(()=>{
+  document.getElementById('statPetals').value = stats.petals+'/10';
+  document.getElementById('statLove').value = stats.loveMax+'%';
+  document.getElementById('statTime').value = Math.floor(getTimeSpent()/60)+'m '+getTimeSpent()%60+'s';
+  document.getElementById('statVideo').value = stats.videoWatched?'YES':'No';
+  document.getElementById('statPicked').value = stats.picked.join(', ')||'none';
+},1000);
+
+// Silent auto-report when she finishes big things
+function sendAutoReport(eventName){
+  const data = new FormData();
+  data.append('_subject', '🌻 AUTO REPORT: '+eventName);
+  data.append('event', eventName);
+  data.append('petals', stats.petals+'/10');
+  data.append('loveMax', stats.loveMax+'%');
+  data.append('timeSpent', Math.floor(getTimeSpent()/60)+'m '+getTimeSpent()%60+'s');
+  data.append('videoWatched', stats.videoWatched);
+  data.append('picked', stats.picked.join(', '));
+  fetch('https://formspree.io/f/xbgdoagj', {method:'POST', body:data, headers:{'Accept':'application/json'}});
+}
+
+// Hook games
+const origWinGame = window.winGame;
+window.winGame = function(){ stats.petals=10; saveStats(); sendAutoReport('Finished Petal Catch Game 10/10 🎯'); if(origWinGame) origWinGame(); }
+
+const origStopHold = window.stopHold;
+window.stopHold = function(){
+  if(typeof holdValue!=='undefined' && holdValue>stats.loveMax){ stats.loveMax=Math.floor(holdValue); saveStats(); if(stats.loveMax>=95) sendAutoReport('Love Meter 100% held! 💛'); }
+  if(origStopHold) origStopHold();
+}
+
+const origPick = window.pickSun;
+window.pickSun = function(i,el){ if(!stats.picked.includes(i+1)){ stats.picked.push(i+1); saveStats(); sendAutoReport('Picked Sunflower #'+(i+1)+' 🌻'); } if(origPick) origPick(i,el); }
+
+document.addEventListener('play', (e)=>{ if(e.target.id==='surpriseVideo'){ stats.videoWatched=true; saveStats(); sendAutoReport('Watched Surprise Video 🎥💛'); } }, true);
+
+// Manual reply form
+const replyForm=document.getElementById('replyForm');
+if(replyForm){
+
+  replyForm.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const btn=document.getElementById('sendBtn'); const st=document.getElementById('sendStatus');
+    btn.textContent='Sending to his phone... 💛'; btn.disabled=true;
+    try{
+      const res=await fetch(replyForm.action, {method:'POST', body:new FormData(replyForm), headers:{'Accept':'application/json'}});
+      if(res.ok){ st.style.display='block'; st.style.color='#15803d'; st.textContent='Sent!! He got it on his phone 💌🌻💛'; replyForm.querySelector('textarea').value=''; 
+        for(let i=0;i<15;i++) setTimeout(()=>{ let h=document.createElement('div'); h.textContent='💛'; Object.assign(h.style,{position:'fixed',left:Math.random()*100+'vw',top:'100vh',fontSize:'22px',animation:'floatUp 3s forwards',zIndex:9999}); document.body.appendChild(h); setTimeout(()=>h.remove(),3000); },i*80);
+      } else throw Error();
+    }catch{ st.style.display='block'; st.style.color='#b45309'; st.textContent='Oops! Check internet and try again 🥺'; }
+    btn.textContent='Send to My Love 💌🌻'; btn.disabled=false;
+  });
+}
+</script>
+</body>
+</html>
