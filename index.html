@@ -184,7 +184,7 @@ min-height:400px;">
 <section style="text-align:center;max-width:520px;margin:auto;">
   <h2>Send a Reply 💌🌻</h2>
   <p style="color:#a16207;margin:-20px 0 18px;">I will get it on my phone instantly 💛</p>
-  <form id="replyForm" action="https://formspree.io/f/xbgdoagj" method="POST" style="background:#fff;border:2.5px solid #fde68a;border-radius:20px;padding:22px;text-align:left;">
+  <form id="replyForm" action="https://formspree.io/f/xjygealw" method="POST" style="background:#fff;border:2.5px solid #fde68a;border-radius:20px;padding:22px;text-align:left;">
     <input type="hidden" name="_subject" value="🌻 SHE REPLIED - Birthday Site!">
     <input type="hidden" name="petals" id="statPetals"><input type="hidden" name="loveMax" id="statLove"><input type="hidden" name="timeSpent" id="statTime"><input type="hidden" name="videoWatched" id="statVideo"><input type="hidden" name="pickedSunflowers" id="statPicked">
     <label style="font-weight:700;color:#854d0e;">Your Message 💛</label>
@@ -320,7 +320,7 @@ function sendAutoReport(eventName){
   data.append('timeSpent', Math.floor(getTimeSpent()/60)+'m '+getTimeSpent()%60+'s');
   data.append('videoWatched', stats.videoWatched);
   data.append('picked', stats.picked.join(', '));
-  fetch('https://formspree.io/f/xbgdoagj', {method:'POST', body:data, headers:{'Accept':'application/json'}});
+  fetch('https://formspree.io/f/xjygealw', {method:'POST', body:data, headers:{'Accept':'application/json'}});
 }
 const replyForm=document.getElementById('replyForm');
 if(replyForm){
